@@ -1,0 +1,82 @@
+ .header {
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    /* now the nav bar will stick to the top. The z-index makes sure nothing comes ontop of the navbar (exaggerrated) */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+ }
+ 
+ .header__logo {
+    width: 100px;
+    /* object-fit ensures that the defined size of this object always stays
+     the same no matter what. So the logo will always have width of 100px*/
+    object-fit: contain;
+    margin: 0 20px; 
+    margin-top: 18px;
+ }
+
+.header__optionBasket{
+    /* the parent of this container (.header) has align-items center of which 
+    this container, as a child, inherits */
+    display: flex;
+    /* the elements (items) in this container will also be aligned center now */
+    align-items: center;
+}
+
+.header__basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.headerNav {
+    display: flex;
+    /* space-evenly to give same amount of space between everything in the headerNav */
+    justify-content: space-evenly;
+}
+
+.header__option {
+    display: flex;
+    /* all the children of header__option is made into a column */
+    flex-direction: column;
+    /* margin adds space to the outside of the element whilst paddding adds from inside
+    i.e from the border goin inwards */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header__optionLineOne{
+    font-size: 10px;
+}
+
+.header__optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+
+}
+.header__link {
+    color: white;
+    /* remove the default underline of a line by none text-decoration */
+    text-decoration: none;
+}
+
+.header_search {
+    display: flex;
+    /* flex 1 means the container (the div) should try and use as much screen as possible) */
+    flex: 1;
+}
+
+.header__searchIcon {
+    background-color: #cd9042;
+    padding: 5px;
+    /* !important to override materials ui in built css on their icons */
+    height: 22px !important; 
+ }
+
+.header__searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+
+}
