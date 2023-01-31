@@ -25,7 +25,7 @@ function Product(props, rating) {
             </div>
         </div>
         <img src={props.image} alt=""/>
-        <button>Add to Basket</button>
+        <button onClick="">Add to Basket</button>
     </div>
   )
 }
