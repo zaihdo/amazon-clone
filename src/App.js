@@ -13,11 +13,11 @@ function App() {
             <Header/>
             <h1>Checkout</h1>
           </Route>
-          <Route path="/checkout">
+          <Route path="/prime">
             <Header/>
             <h1>Prime</h1>
           </Route>
-          <Route path="/checkout">
+          <Route path="/orders">
             <Header/>
             <h1>Orders</h1>
           </Route>
