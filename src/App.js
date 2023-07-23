@@ -13,6 +13,14 @@ function App() {
             <Header/>
             <h1>Checkout</h1>
           </Route>
+          <Route path="/checkout">
+            <Header/>
+            <h1>Prime</h1>
+          </Route>
+          <Route path="/checkout">
+            <Header/>
+            <h1>Orders</h1>
+          </Route>
           <Route path="/login">
             <Header/>
             <h1>Login page</h1>
