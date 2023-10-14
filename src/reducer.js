@@ -1,5 +1,5 @@
 export const initialState = {
-    basket: ["bread", ""]
+    basket: []
 };
 
 const reducer = (state, action) => {
@@ -8,8 +8,8 @@ const reducer = (state, action) => {
         case "ADD_TO_BASKET":
             // logic for adding
             return { 
-                state
-                //basket: [...state.basket, action.item] // include what is currently in the basket + what was just dispatched through the action
+                ...state,
+                basket: [...state.basket, action.item] // include what is currently in the basket + what was just dispatched through the action
             }
         case "REMOVE_FROM_BASKET":
             // logic for removing
