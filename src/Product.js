@@ -4,20 +4,20 @@ import { useStateValue } from './StateProvider';
 // a product has different properties so it takes in 'props' as a parameter. Alternatively
 // we could list out all the props eg title, id, price instead of just writing 'props'. If we do write 'props'
 // we will need to access each specific prop by prop.property name eg. prop.title
-function Product(props, id, title, image, rating) {
+function Product( props) {
 
-const [basket, dispatch] = useStateValue();
+const [{}, dispatch] = useStateValue();
 
-const addToBasket = () => {
+const addToBasket = async () => {
     // add item to basket
     dispatch({
         type: 'ADD_TO_BASKET',
         item: {
-            id: id,
-            title: title,
-            image: image,
+            id: props.id,
+            title: props.title,
+            image: props.image,
             price: props.price,
-            rating: rating
+            rating: props.rating
         }
     })
  }
@@ -42,7 +42,7 @@ const addToBasket = () => {
             </div>
         </div>
         <img src={props.image} alt=""/>
-        <button onClick="">Add to basket</button>
+        <button onClick={addToBasket}>Add to basket</button>
     </div>
   )
 }

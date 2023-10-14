@@ -2,7 +2,6 @@
 // To track the basket and user
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { createContext, useContext, useReducer } from "react";
 
 // THIS IS THE DATA LAYER
