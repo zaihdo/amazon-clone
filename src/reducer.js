@@ -1,5 +1,17 @@
 export const initialState = {
-    basket: []
+    basket: [{
+        id:"1",
+              title:"Apple EarPods Headphones with Lightning Connector.",
+              price:11.96,
+              rating:5,
+              image:"https://m.media-amazon.com/images/I/41-aexp44tL._AC_SX466_.jpg"
+    },{
+        id:"1",
+              title:"Apple EarPods Headphones with Lightning Connector.",
+              price:11.96,
+              rating:5,
+              image:"https://m.media-amazon.com/images/I/41-aexp44tL._AC_SX466_.jpg"
+    }]
 };
 
 const reducer = (state, action) => {
