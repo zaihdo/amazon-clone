@@ -2,12 +2,14 @@ import React from 'react'
 import { useStateValue } from './StateProvider';
 import "./Checkout.css";
 import CheckoutProduct from './CheckoutProduct';
+import Subtotal from './Subtotal';
 
 function Checkout () {
     const [{basket}] = useStateValue();
     
     return (
-    <div className='Checkout'>
+    <div className='checkout'>
+        <div className="checkout__left">
         <img 
             className="checkout__ad" 
             src="https://images-na.ssl-images-amazon.com/images/G/15/CA-hq/2023/img/X_Site/XCM_CUTTLE_1626551_3395727_1500x150_en_CA.jpg" 
@@ -37,7 +39,13 @@ Continue shopping on the Amazon.ca homepage, learn about today's deals, or visit
                     />
                 ))}
             </div>
-        )} 
+        )}    
+        </div> 
+        {basket.length > 0 && (
+            <div className="checkout__right">
+                <Subtotal></Subtotal>
+            </div>
+        )}
     </div>
     );
 }
