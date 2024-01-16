@@ -3,9 +3,15 @@
     margin: 20px;
     background-color: white;
     height: max-content;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center; 
+    padding: 5px;
+
 }
+
+.checkout__left {
+    padding-right: 5px;
+}
+
 .checkout__title {
     margin-right: 10px;
     padding: 10px;

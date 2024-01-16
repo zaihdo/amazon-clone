@@ -1,18 +1,19 @@
 .checkoutProduct {
     display: flex;
     margin: 5px;
-    margin-top: 20px;
-    margin-bottom: 20p;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .checkoutProduct__image {
     object-fit: contain; 
     width: 180px;
-    height: 180px
+    height: 180px;
 }
 
-.checkoutProdcut__info {
-     padding-left: 20px;
+.checkoutProduct__info {
+    padding-left: 20px;
+    flex: 1
 }
 
 .checkoutProduct__rating {
